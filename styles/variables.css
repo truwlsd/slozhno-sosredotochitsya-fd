@@ -2,3 +2,37 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --main-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --secondary-title-line-height: 1.31;
+  --main-font-size: 1.125rem;
+  --text-shadow: 4px 4px 0 var(--accent-color);
+  --font-family: 'IBM Plex mono', sans-serif;
+  --border-parameters: solid 1px var(--accent-color);
+  --header-subtitle-size: clamp(22.1875rem, 21.6508rem + 2.2901vw, 22.75rem);
+  --main-title-line-height: 0.8;
+
+  /* colors dark main */
+
+  --accent-color: #FF0070;
+  --secondary-color: #DB00FF;
+  --main-color: #F1B2CE;
+  --dark-color: #000028;
+  --dark-url-header: url("../images/cover-image-dark.png");
+}
+
+
+@media (width >= 768px) {
+  :root {
+    --main-title-line-height: 0.42;
+    --main-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --header-subtitle-size: clamp(22.75rem, -1.0625rem + 49.6094vw, 30.6875rem);
+  }
+}
+
+@media (width >= 1024px) {
+  :root {
+    --main-title-line-height: 0.6;
+  }
+}
